@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  flask-app:
+    build:
+      context: .
+    image: flask_app_sample:1.0.2
+    container_name: flask-app-container_sample-1.0.2
+    

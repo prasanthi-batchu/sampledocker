@@ -1,0 +1,68 @@
+### IMAGES
+
+- To view List of Images
+docker images
+
+- delete a docker image
+docker rmi -f <image_id>
+
+
+
+### CONTAINERS
+
+- view list of running container
+docker container ls
+
+- to start a container
+docker start name/container_id
+
+- to stop a container
+docker stop name/container_id
+
+
+
+
+
+### TO TAG AN IMAGE
+- to Tag a Docker image
+docker tag <image_id> <username>/<repo_name>:<tag or version>
+
+
+
+
+### TO PUSH AN IMAGE
+- to push an image to dockerhub
+docker push <username>/<repo_name>:<tag or version>
+
+
+
+
+### TO PULL AN IMAGE
+- to pull an image from dockerhub
+docker pull <username>/<repo_name>:<tag or version>
+
+
+
+
+### TO Create and RUN A Container WITH reference to the image
+docker run -d -p 4000:5000 --name flask_app1.0.0 chethanpss24/flask_app:1.0.0
+
+
+
+### TO CREATE IMAGE FOR AN APPLCATIOn
+
+docker-compose -f <.yaml> build
+
+
+### VIEW LIST OF CONTAINERS
+docker ps
+
+
+
+### VIEW LIST OF STOPPED CONTAINERS
+docker ps -a
+
+
+
+### TO REMOVE A STOPPED CONTAINER
+docker rm your_container_name or container_id
