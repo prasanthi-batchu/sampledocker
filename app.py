@@ -13,7 +13,9 @@ def new_route():
    return 'Hello this is new route..'
 
 
-
+@app.route('/docker')
+def new_route():
+   return 'Hello this is docker route..'
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0')
