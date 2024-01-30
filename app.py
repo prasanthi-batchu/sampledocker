@@ -14,7 +14,7 @@ def new_route():
 
 
 @app.route('/docker')
-def new_route():
+def docker():
    return 'Hello this is docker route..'
 
 if __name__ == '__main__':
