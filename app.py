@@ -13,9 +13,6 @@ def new_route():
    return 'Hello this is new route..'
 
 
-@app.route('/test_route')
-def test_route():
-   return 'Hello this is test route..'
 
 
 if __name__ == '__main__':
